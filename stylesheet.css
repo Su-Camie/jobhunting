@@ -25,7 +25,7 @@ li {
 }
 
 .container {
-  max-width: 95rem;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -81,8 +81,12 @@ li {
   font-size: 1.4rem;
 }
 
-.declaration h3, .heading h3, .decision-sum h4 {
+.newline {
   display: inline-block;
+}
+
+.newline:not(.before-sum .newline) {
+  margin: 2px 0;
   background: linear-gradient(transparent 70%, #ff6 70%);
 }
 
@@ -114,7 +118,11 @@ header {
 nav li a {
   font-weight: bold;
   color: white;
-  font-size: 18px;
+  font-size: 1.5rem;
+}
+
+.menu-icon {
+  display: none;
 }
 
 /* ------------- topA -------------- */
@@ -142,7 +150,7 @@ section {
 }
 
 .bubble-left, .bubble-right {
-  width: 32rem;
+  width: 360px;
 
 }
 
@@ -203,58 +211,61 @@ section {
   background-color: #FFF5F9;
 }
 
-.contents {
+.contents ul {
   display: flex;
   background: linear-gradient(90deg, rgba(64, 224, 208, 0.5) 0%, rgba(64, 224, 208, 0.5) 50%, rgba(255, 215, 0, 0.5) 50%, rgba(255, 215, 0, 0.5) 100%);
-  border-radius: 20px;
-  padding: 40px 52px;
 }
 
 .schools {
   width: 16%;
+  padding: 0;
 }
 
-.content-blue, .content-yellow {
+.content {
   width: 42%;
+  padding: 0;
 }
 
-.flow li {
+.flow {
   border-radius: 70px;
-  margin: 5px auto 10px auto;
-  padding: auto;
-  height: 17.5rem;
+  margin-bottom: 22px;
+  height: 95%;
   background-color: snow;
 }
 
-.blue li {
+.contents .left {
+  margin: 40px 0 40px 50px;
+}
+
+.contents .right {
+  margin: 40px 50px 40px 0;
+}
+
+.content .blue{
   border: 5px solid rgb(64, 224, 208);
 }
 
-.yellow li {
+.content .yellow {
   border: 5px solid rgb(255, 215, 0);
+}
+
+.flow dl {
+  padding: 20px;
 }
 
 .flow dt {
   font-size: 1.55rem;
-  padding-bottom: 5px;
   font-weight: bold;
   text-align: center;
-}
-
-h3 {
-  text-align: center;
+  padding: 8px 0;
 }
 
 .school {
+  text-align: center;
   background-color: snow;
   font-size: 1.9rem;
   padding: 0.6rem;
-  width: 100%;
-  margin-top: 80px;
-}
-
-.middle, .high {
-  margin: 207px 0;
+  margin-top: 130px;
 }
 
 .highlight {
@@ -266,12 +277,12 @@ h3 {
 }
 
 .arrow-S {
-  width: 4rem;
+  width: 4.6rem;
 }
 
 .arrow-L {
   width: 4rem;
-  margin: 15px 0;
+  margin: 30px 0;
 }
 
 .before-sum {
@@ -279,6 +290,7 @@ h3 {
   font-size: 1.6rem;
   letter-spacing: 1px;
   padding-bottom: 40px;
+  text-align: center;
 }
 
 /* ------------- decision -------------- */
@@ -396,12 +408,4 @@ footer p {
   width: 50px;
   margin-right: 8px;
   border-radius: 25px;
-}
-
-/* ------------- responsive -------------- */
-
-@media all and (max-width: 670px) {
-  html {
-      font-size: 62.5%;
-  }
 }
