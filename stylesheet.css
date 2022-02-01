@@ -85,7 +85,7 @@ li {
   display: inline-block;
 }
 
-.newline:not(.before-sum .newline) {
+.newline:not(.before-sum .newline):not(#quiz .newline) {
   margin: 2px 0;
   background: linear-gradient(transparent 70%, #ff6 70%);
 }
