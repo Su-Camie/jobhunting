@@ -61,15 +61,14 @@ li {
 }
 
 .main-title span {
-  font-size: 3.4rem;
+  font-size: 3.2rem;
   position: absolute;
   top: 0;
-  right: -100px;
+  right: -90px;
   display: block;
   padding-top: 0.3rem;
   padding-left: 1.6rem;
   color: tomato;
-}
 
 li {
   float: left;
